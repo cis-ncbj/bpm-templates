@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-noname.txt" /]
+[( #{portal.offer.rejected.message(${offer_pl}, ${offer_en}, ${reason_pl}, ${reason_en})} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

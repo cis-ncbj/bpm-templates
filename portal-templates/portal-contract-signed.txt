@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-noname.txt" /]
+[( #{portal.contract.signed.message(${contract_id}, ${contract_type_name}, ${contract_topic},  __${#dates.format(#dates.createNow(),'dd-MM-YYYY')}__)} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

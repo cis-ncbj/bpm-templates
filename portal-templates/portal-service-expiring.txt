@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-noname.txt" /]
+[( #{portal.service.expiring.message(${service_id}, ${service_name}, ${days})} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

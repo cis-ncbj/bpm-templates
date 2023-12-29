@@ -1,0 +1,1 @@
+[( #{email.user.added.to.service.subject(${service_id})} )]

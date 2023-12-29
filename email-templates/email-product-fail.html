@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <em th:replace="email-general.html :: greetings_admin"></em> <br />
+    <p th:utext="#{email.product.fail.content1(${process_url}, ${process_id}, ${error_code})}"></p>
+    <p th:utext="#{email.product.fail.content2(${error_msg})}"></p>
+    <p th:utext="#{email.product.fail.content3(${product_reference_id})}"></p>
+    <p th:utext="#{email.product.fail.content4(${service_group}, ${service_id})}"></p>
+    <p>
+        <span th:replace="email-general.html :: regards"></span><br/>
+        <em th:replace="email-general.html :: signature"></em>
+    </p>
+    <p>
+    	<span th:replace="email-general.html :: disclaimer"></span>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+[( #{email.new.space.member.subject(${space_name})} )]

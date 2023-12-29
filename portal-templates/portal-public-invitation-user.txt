@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-noname.txt" /]
+[( #{portal.public.invitation.user.message(${space_name})} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

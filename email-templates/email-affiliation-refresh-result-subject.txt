@@ -1,0 +1,1 @@
+[( #{email.affiliation.refresh.result.subject(${affiliation_institution_pl}, ${affiliation_institution_en})} )]

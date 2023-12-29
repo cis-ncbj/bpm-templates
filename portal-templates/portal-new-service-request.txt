@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-admin.txt" /]
+[( #{portal.new.service.request.message(${process_id}, ${product_name})} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

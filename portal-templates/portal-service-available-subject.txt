@@ -1,0 +1,1 @@
+[( #{portal.new.service.available.subject(${product_name}, ${address}) })]

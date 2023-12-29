@@ -1,0 +1,1 @@
+[( #{email.public.invitation.admin.subject(${space_name})} )]

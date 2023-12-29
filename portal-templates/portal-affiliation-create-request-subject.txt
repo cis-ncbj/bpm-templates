@@ -1,0 +1,1 @@
+[( #{portal.affiliation.create.request.subject(${affiliation_type_pl}, ${affiliation_type_en})} )]

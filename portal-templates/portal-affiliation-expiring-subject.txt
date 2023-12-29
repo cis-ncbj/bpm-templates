@@ -1,0 +1,1 @@
+[( #{portal.affiliation.expiring.subject(${affiliation_name_pl}, ${affiliation_name_pl})} )]

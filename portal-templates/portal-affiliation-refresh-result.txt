@@ -1,0 +1,4 @@
+[#th:block th:replace="portal-greetings-noname.txt" /]
+[( #{portal.affiliation.refresh.result.message(${affiliation_institution}, ${affiliation_rejected_pl}, ${affiliation_rejected_en})} )]
+[#th:block th:replace="portal-regards.txt" /]
+[#th:block th:replace="portal-signature.txt" /]

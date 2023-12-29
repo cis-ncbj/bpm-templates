@@ -1,0 +1,1 @@
+[( #{portal.affiliation.refresh.subject(${affiliation_institution_pl}, ${affiliation_institution_en})} )]

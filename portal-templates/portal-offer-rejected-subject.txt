@@ -1,0 +1,1 @@
+[( #{portal.offer.rejected.subject(${offer_pl}, ${offer_en})} )]

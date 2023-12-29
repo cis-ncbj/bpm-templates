@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+    <em th:fragment="greetings(firstName, surname)" th:text="#{email.greetings(${firstName}, ${surname})}"></em>
+    <em th:fragment="greetings_noname" th:text="#{email.greetings.noname}"></em>
+    <em th:fragment="greetings_admin" th:text="#{email.greetings.admin}"></em>
+    <span th:fragment="note" th:utext="#{email.note}"></span>
+    <span th:fragment="regards" th:utext="#{email.regards}"></span>
+    <em th:fragment="signature" th:utext="#{email.signature}"></em>
+    <span th:fragment="disclaimer" th:utext="#{email.disclaimer}"></span>
+</body>
+</html>

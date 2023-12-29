@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+		<em th:replace="email-general.html :: greetings_noname"></em> <br/>
+		<p>
+			<span th:utext="#{email.public.invitation.reject.content(${space_name})}"></span>
+		</p>
+		<p>
+		    <span th:replace="email-general.html :: regards"></span><br/>
+		    <em th:replace="email-general.html :: signature"></em>
+		</p>
+		<p>
+    		<span th:replace="email-general.html :: disclaimer"></span>
+    	</p>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <em th:replace="email-general.html :: greetings_admin"></em> <br />
+    <p>
+    	<span th:utext="#{email.new.service.request.content(${product_name}, ${process_id})}"></span>
+    </p>
+    <p>
+        <span th:replace="email-general.html :: regards"></span><br>
+        <em th:replace="email-general.html :: signature"></em>
+    </p>
+    <p>
+    	<span th:replace="email-general.html :: disclaimer"></span>
+    </p>
+  </body>
+</html>
