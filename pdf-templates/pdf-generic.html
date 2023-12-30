@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <em th:replace="pdf-general.html :: greetings_noname"></em> <br/>
+    <p th:text="#{pdf.generic.content(${message})}"></p>
+    <p>
+    	<span th:replace="pdf-general.html :: regards"></span><br/>
+       	<em th:replace="pdf-general.html :: signature"></em>
+    </p>    
+  </body>
+</html>
