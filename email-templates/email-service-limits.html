@@ -15,7 +15,7 @@
     <ul>
       <li th:each="entry : ${resources}" th:text="${entry.containsKey('period.limit') and entry.containsKey('period_limit_percent')} ? #{email.service.limits.usage1(${entry.description},${entry.unit},${entry.value},${entry.period_limit},${entry.period_limit_percent})} : #{email.service.limits.usage2(${entry.description},${entry.unit},${entry.value})}"></li>
     </ul>
-    <p><span th:text="${valid_to} ? #{email.service.limits.content5(${valid_to})} : #{email.service.limits.content6}"></span></p>
+    <p><span th:text="${valid_to}!='' ? #{email.service.limits.content5(${valid_to})} : #{email.service.limits.content6}"></span></p>
     <p><span th:utext="#{email.service.limits.content7}"></span></p>
     <p>
       <span th:replace="email-general.html :: regards"></span><br/>
