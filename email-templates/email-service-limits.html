@@ -6,11 +6,35 @@
   <body>
     <em th:replace="email-general.html :: greetings_noname"></em> <br/>
     <p>
-        <span th:utext="#{email.service.limits.content(${service_group})}"></span>
+        <span th:utext="#{email.service.limits.content1(${service_group})}"></span>
+    </p>
+    <p>
+        <span th:utext="#{email.service.limits.content2(${service_name})}"></span>
+    </p>
+    <p>
+        <span th:utext="#{email.service.limits.content3()}"></span>
     </p>
     <ul th:each="entry : ${resources}">
-      <li th:text="#{email.service.limits.usage(${entry.description},${entry.unit},${entry.value})}"></li>
+      <li th:text="#{email.service.limits.usage(${entry.description},${entry.unit},${entry.total_value},${entry.limit},${entry.limit_percent})}"></li>
     </ul>
+    <p>
+        <span th:utext="#{email.service.limits.content4(${date_from},${date_to})}"></span>
+    </p>
+    <ul th:each="entry : ${resources}">
+      <li th:text="#{email.service.limits.usage(${entry.description},${entry.unit},${entry.value},${entry.period_limit},${entry.period_limit_percent})}"></li>
+    </ul>
+    <p>
+        <span th:utext="#{email.service.limits.content5(${valid_to})}"></span>
+    </p>
+    <p>
+        <span th:utext="#{email.service.limits.content6()}"></span>
+    </p>
+    <p>
+        <span th:utext="#{email.service.limits.content7()}"></span>
+    </p>
+    <p>
+        <span th:utext="#{email.service.limits.content8()}"></span>
+    </p>
     <p>
         <span th:replace="email-general.html :: regards"></span><br/>
         <em th:replace="email-general.html :: signature"></em>
