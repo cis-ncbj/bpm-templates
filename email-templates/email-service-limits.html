@@ -15,21 +15,16 @@
         <span th:utext="#{email.service.limits.content3}"></span>
     </p>
     <ul th:each="entry : ${resources}">
-      <li th:text="#{email.service.limits.usage1(${entry.description},${entry.unit},${entry.total_value},${entry.limit},${entry.limit_percent})}"></li>
-      <li th:text="#{email.service.limits.usage2(${entry.description},${entry.unit},${entry.total_value})}"></li>
+      <li th:text="${entry.limit} ? #{email.service.limits.usage1(${entry.description},${entry.unit},${entry.total_value},${entry.limit},${entry.limit_percent})} : #{email.service.limits.usage2(${entry.description},${entry.unit},${entry.total_value})}"></li>
     </ul>
     <p>
         <span th:utext="#{email.service.limits.content4(${date_from},${date_to})}"></span>
     </p>
     <ul th:each="entry : ${resources}">
-      <li th:text="#{email.service.limits.usage1(${entry.description},${entry.unit},${entry.value},${entry.period_limit},${entry.period_limit_percent})}"></li>
-      <li th:text="#{email.service.limits.usage2(${entry.description},${entry.unit},${entry.value})}"></li>
+      <li th:text="${entry.period_limit} ? #{email.service.limits.usage1(${entry.description},${entry.unit},${entry.value},${entry.period_limit},${entry.period_limit_percent})} : #{email.service.limits.usage2(${entry.description},${entry.unit},${entry.value})}"></li>
     </ul>
     <p>
-        <span th:utext="#{email.service.limits.content5(${valid_to})}"></span>
-    </p>
-    <p>
-        <span th:utext="#{email.service.limits.content6}"></span>
+        <span th:text="${valid_to} ? #{email.service.limits.content5(${valid_to})} : #{email.service.limits.content6}"></span>
     </p>
     <p>
         <span th:utext="#{email.service.limits.content7}"></span>
