@@ -12,7 +12,7 @@
         <span th:utext="#{email.service.limits.content2(${service_name})}"></span>
     </p>
     <p>
-        <span th:utext="#{email.service.limits.content3()}"></span>
+        <span th:utext="#{email.service.limits.content3}"></span>
     </p>
     <ul th:each="entry : ${resources}">
       <li th:text="#{email.service.limits.usage1(${entry.description},${entry.unit},${entry.total_value},${entry.limit},${entry.limit_percent})}"></li>
@@ -29,10 +29,10 @@
         <span th:utext="#{email.service.limits.content5(${valid_to})}"></span>
     </p>
     <p>
-        <span th:utext="#{email.service.limits.content6()}"></span>
+        <span th:utext="#{email.service.limits.content6}"></span>
     </p>
     <p>
-        <span th:utext="#{email.service.limits.content7()}"></span>
+        <span th:utext="#{email.service.limits.content7}"></span>
     </p>
     <p>
         <span th:replace="email-general.html :: regards"></span><br/>
