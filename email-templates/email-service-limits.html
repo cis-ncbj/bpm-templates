@@ -8,6 +8,9 @@
     <p>
         <span th:utext="#{email.service.limits.content(${service_group})}"></span>
     </p>
+    <ul th:each="entry : ${resources}">
+      <li th:text="#{email.service.limits.usage(${entry.description},${entry.unit},${entry.value})}"></li>
+    </ul>
     <p>
         <span th:replace="email-general.html :: regards"></span><br/>
         <em th:replace="email-general.html :: signature"></em>
