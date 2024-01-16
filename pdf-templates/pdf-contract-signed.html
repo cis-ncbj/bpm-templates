@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 <body>
-	<div class='header' th:include="header::header"></div>
+	<div class='header' th:insert="header.html :: header"></div>
 	<em th:replace="pdf-general.html :: greetings(${first_name}, ${last_name}, ${email})"></em>
 	<br />
 	<p th:utext="#{pdf.contract.signed.content(${contract_id}, ${contract_type_name}, ${contract_topic}, __${#dates.format(#dates.createNow(),'dd-MM-YYYY')}__)}"></p>
@@ -16,7 +16,7 @@
 		<em th:replace="pdf-general.html :: signature"></em>
 	</p>
 	<br />
-	<div class='footer' th:include="footer::footer"></div>
+	<div class='footer' th:insert="footer.html :: footer"></div>
 </body>
 </html>
 
