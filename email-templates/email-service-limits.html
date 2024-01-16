@@ -9,13 +9,13 @@
     <p><span th:utext="#{email.service.limits.content2(${service_name})}"></span></p>
     <p><span th:utext="#{email.service.limits.content3}"></span></p>
     <ul>
-      <li th:each="entry : ${resources}" th:text="${entry.containsKey('limit') and entry.containsKey('limit_percent') and NOT #strings.isEmpty(entry.get('limit')) and NOT #strings.isEmpty(entry.get('limit_percent'))} ? #{email.service.limits.usage1(${entry.description}, ${entry.unit}, ${entry.total_value}, ${entry.limit}, ${entry.limit_percent})} : #{email.service.limits.usage2(${entry.description}, ${entry.unit}, ${entry.total_value})}"></li>
+      <li th:each="entry : ${resources}" th:text="${entry.containsKey('limit') AND entry.containsKey('limit_percent') AND NOT #strings.isEmpty(entry.get('limit')) AND NOT #strings.isEmpty(entry.get('limit_percent'))} ? #{email.service.limits.usage1(${entry.description}, ${entry.unit}, ${entry.total_value}, ${entry.limit}, ${entry.limit_percent})} : #{email.service.limits.usage2(${entry.description}, ${entry.unit}, ${entry.total_value})}"></li>
     </ul>
     <p><span th:utext="#{email.service.limits.content4(${date_from}, ${date_to})}"></span></p>
     <ul>
-      <li th:each="entry : ${resources}" th:text="${entry.containsKey('period.limit') and entry.containsKey('period_limit_percent') and NOT #strings.isEmpty(entry.get('period.limit')) and NOT #strings.isEmpty(entry.get('period_limit_percent'))} ? #{email.service.limits.usage1(${entry.description}, ${entry.unit}, ${entry.value}, ${entry.period_limit}, ${entry.period_limit_percent})} : #{email.service.limits.usage2(${entry.description}, ${entry.unit}, ${entry.value})}"></li>
+      <li th:each="entry : ${resources}" th:text="${entry.containsKey('period.limit') AND entry.containsKey('period_limit_percent') AND NOT #strings.isEmpty(entry.get('period.limit')) AND NOT #strings.isEmpty(entry.get('period_limit_percent'))} ? #{email.service.limits.usage1(${entry.description}, ${entry.unit}, ${entry.value}, ${entry.period_limit}, ${entry.period_limit_percent})} : #{email.service.limits.usage2(${entry.description}, ${entry.unit}, ${entry.value})}"></li>
     </ul>
-    <p><span th:text="${NOT #strings.isEmpty(valid_to)} ? #{email.service.limits.content5(${valid_to})} : #{email.service.limits.content6}"></span></p>
+    <p><span th:text="${valid_to != null AND NOT #strings.isEmpty(valid_to)} ? #{email.service.limits.content5(${valid_to})} : #{email.service.limits.content6}"></span></p>
     <p><span th:utext="#{email.service.limits.content7}"></span></p>
     <p>
       <span th:replace="email-general.html :: regards"></span><br/>
