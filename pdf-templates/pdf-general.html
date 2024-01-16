@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 </head>
 <body>
     <em th:fragment="greetings(firstName, surname, email)" th:utext="#{pdf.greetings(${firstName}, ${surname}, ${email})}"></em>
