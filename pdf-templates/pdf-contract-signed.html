@@ -7,7 +7,7 @@
 <body>
 	<div class='header' th:insert="header.html :: header"></div>
 	<em th:replace="pdf-general.html :: greetings(${first_name}, ${last_name}, ${email})"></em>
-	<br />
+	<hr>
 	<p th:utext="#{pdf.contract.signed.content(${contract_id}, ${contract_type_name}, ${contract_topic}, __${#dates.format(#dates.createNow(),'dd-MM-YYYY')}__)}"></p>
 	<br />
 	<p><span th:replace="pdf-general.html :: note"></span></p>
