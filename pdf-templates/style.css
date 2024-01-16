@@ -21,7 +21,7 @@ body {
     margin-top: 3.3cm;
     margin-left: 2cm;
     margin-right: 2cm;
-    margin-bottom: 3.3cm;
+    margin-bottom: 5cm;
 
     size: A4 portrait;
 }
@@ -50,6 +50,7 @@ div.footer {
 
 .page-count {
     text-align: right;
+    font-size: 10px;
 }
 
 .logo {
