@@ -1,4 +1,4 @@
 [#th:block th:replace="portal-greetings-noname.txt" /]
-[( #{portal.affiliation.refresh.result.message(${affiliation_institution}, ${affiliation_rejected_pl}, ${affiliation_rejected_en})} )]
+[( #{portal.affiliation.refresh.result.message(${affiliation_institution_pl}, ${affiliation_institution_en}, ${affiliation_rejected_pl}, ${affiliation_rejected_en})} )]
 [#th:block th:replace="portal-regards.txt" /]
 [#th:block th:replace="portal-signature.txt" /]
