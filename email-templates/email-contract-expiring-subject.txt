@@ -1,1 +1,1 @@
-[( #{email.contract.expiring.subject(${contract_id})} )]
+[( #{email.contract.expiring.subject(${contract_id}, ${contract_no})} )]
