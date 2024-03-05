@@ -28,11 +28,13 @@ body {
 
 div.header {
     position: running(header);
+    width: 17cm;
 }
 
 div.footer {
     display: block;
     margin-top: 0.5cm;
+    width: 17cm;
     position: running(footer);
 }
 
