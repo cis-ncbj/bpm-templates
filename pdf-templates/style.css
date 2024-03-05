@@ -113,3 +113,8 @@ hr {
 .next-page {
     page-break-before: always
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
