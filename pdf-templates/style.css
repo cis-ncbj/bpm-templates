@@ -18,7 +18,7 @@ body {
         padding-bottom: 10px;
     }
 
-    margin-top: 3.3cm;
+    margin-top: 3.5cm;
     margin-left: 2cm;
     margin-right: 2cm;
     margin-bottom: 5cm;
@@ -101,9 +101,9 @@ table {
 }
 
 hr {
-    background-color: #000000;
-    border: dashed #000000 0.5px;
-    height: 1px;
+    background-color: #01588e;
+    border: solid #01588e 0.1px;
+    height: 0.1px;
 }
 
 .page-break {
