@@ -6,6 +6,18 @@ body {
 
 @page {
 
+    @bottom-left {
+        content: element(footer);
+        vertical-align: top;
+        padding-top: 10px;
+    }
+
+    @top-right {
+        content: element(header);
+        vertical-align: bottom;
+        padding-bottom: 10px;
+    }
+
     margin-top: 3.5cm;
     margin-left: 2cm;
     margin-right: 2cm;
@@ -16,9 +28,13 @@ body {
 
 div.header {
     position: running(header);
+    width: 17cm;
 }
 
 div.footer {
+    display: block;
+    margin-top: 0.5cm;
+    width: 17cm;
     position: running(footer);
 }
 
@@ -53,16 +69,8 @@ p {
     font-size: 12px;
 }
 
-.header {
-	text-align: center;
-	position: fixed;
-	top: 0;
-}
-
 .footer {
     text-align: center;
-    position: fixed;
-	bottom: 0;
 }
 
 @font-face {
@@ -86,6 +94,10 @@ p {
     vertical-align: bottom;
 }
 
+.address-block {
+    height: 100px;
+}
+
 table {
     width: 100%;
 }
@@ -105,6 +117,6 @@ hr {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
