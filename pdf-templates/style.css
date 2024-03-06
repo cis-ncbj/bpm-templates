@@ -2,11 +2,21 @@ body {
     font-size: 14px;
     line-height: 1.4;
     font-family: Verdana;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 @page {
+
+    @bottom-left {
+        content: element(footer);
+        vertical-align: top;
+        padding-top: 10px;
+    }
+
+    @top-right {
+        content: element(header);
+        vertical-align: bottom;
+        padding-bottom: 10px;
+    }
 
     margin-top: 3.5cm;
     margin-left: 2cm;
@@ -18,9 +28,13 @@ body {
 
 div.header {
     position: running(header);
+    width: 17cm;
 }
 
 div.footer {
+    display: block;
+    margin-top: 0.5cm;
+    width: 17cm;
     position: running(footer);
 }
 
@@ -41,36 +55,22 @@ div.footer {
     font-size: 10px;
 }
 
+.logo {
+    width: 275px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
 p {
     font-size: 12px;
 }
 
-.header {
-  margin: auto
-  top: 0;
-    width: 210mm;
-    height: 3.5cm;
-    text-align: center;
-    padding-bottom: 2cm;
-}
-
 .footer {
-    margin: auto;
-    position: fixed;
-    bottom: 0;
-    width: 210mm;
-    height: 5cm;
     text-align: center;
-}
-
-.header img {
-  width: auto;
-  height:100%;          
-}
-
-.footer img {
-  width: auto;
-  height:100%;          
 }
 
 @font-face {
@@ -78,6 +78,25 @@ p {
     src: url(fonts/verdana.ttf) format('truetype');
 }
 
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.address-block {
+    height: 100px;
+}
 
 table {
     width: 100%;
@@ -95,4 +114,9 @@ hr {
 
 .next-page {
     page-break-before: always
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
